@@ -1,0 +1,27 @@
+/* .toolbar {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: gray;
+  float: right;
+} */
+
+/* .category {
+  float: left;
+  background: gray;
+  height: 5vh;
+} */
+
+.category-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, auto);
+  width: 100%;
+  display: inline-block;
+}
+
+.category-item {
+  margin: 0 20px;
+  /* display: inline-block; */
+}
