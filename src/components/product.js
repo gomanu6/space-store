@@ -10,6 +10,7 @@ const product = (props) => {
       </div>
       <div className='product-descirption'>{props.description} </div>
       <div className='product-price'>{props.price} </div>
+      <div className='product-category'>Category: {props.category}</div>
       <button>Add to Cart</button>
     </div>
   );
