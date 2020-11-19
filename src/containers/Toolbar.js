@@ -37,8 +37,17 @@ class Toolbar extends Component {
     ],
   };
 
-  toggleView = (event) => {
-    console.log(event);
+  toggleView = (event, id) => {
+    const clickName = event.target.name;
+    console.log(id);
+    console.log(clickName);
+    const stateChange = this.state.categories.filter((cat) => {
+      return cat.name === clickName;
+    });
+
+    // const newState = { ...stateChange[0] };
+    // console.log(stateChange[0].checked);
+    // newState.checked = !stateChange[0].checked;
   };
 
   render() {
