@@ -71,25 +71,35 @@ class Store extends Component {
         category: "moons",
       },
     ],
-    showCategories: {
-      planets: true,
-      stars: true,
-      asteroids: true,
-      ships: true,
-      accessories: true,
-      moons: true,
-    },
   };
 
   render() {
+    // console.log(this.props.cats);
     let categoryList = [];
 
-    for (let key in this.state.showCategories) {
-      if (this.state.showCategories[key] === true) {
-        categoryList.push(key);
-      }
+    // for (let key in this.state.showCategories) {
+    //   if (this.state.showCategories[key] === true) {
+    //     categoryList.push(key);
+    //   }
+    // }
+
+    // let categoryList = this.props.cats.filter((cat) => {
+    //   return cat.checked === true;
+    // });
+
+    //returns an array of objects where checked is true
+    let newList = this.props.cats.filter((cat) => {
+      return cat.checked === true;
+    });
+
+    //loops through the array of objects to push the category names in an array
+    for (let cat of newList) {
+      categoryList.push(cat.name);
     }
 
+    // console.log(categoryList);
+
+    //checks the category products in the state against those in the filtered categories
     let itemsToShow = this.state.products
       .filter((item) => {
         for (let cat in categoryList) {
@@ -97,6 +107,7 @@ class Store extends Component {
             return item;
           }
         }
+        return null;
       })
       .map((product) => {
         return (
