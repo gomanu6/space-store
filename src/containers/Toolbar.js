@@ -37,17 +37,27 @@ class Toolbar extends Component {
     ],
   };
 
-  toggleView = (event, id) => {
-    const clickName = event.target.name;
-    console.log(id);
-    console.log(clickName);
-    const stateChange = this.state.categories.filter((cat) => {
-      return cat.name === clickName;
+  toggleView = (e, id) => {
+    // console.log(e);
+    // console.log(id);
+
+    const catIndex = this.state.categories.findIndex((c) => {
+      return c.id === id;
     });
 
-    // const newState = { ...stateChange[0] };
-    // console.log(stateChange[0].checked);
-    // newState.checked = !stateChange[0].checked;
+    const cat = { ...this.state.categories[catIndex] };
+    // console.log(catIndex);
+    console.log(cat);
+
+    cat.checked = !this.state.categories[catIndex].checked;
+    console.log(cat);
+
+    const categories = [...this.state.categories];
+    categories[catIndex] = cat;
+
+    this.setState({
+      categories: categories,
+    });
   };
 
   render() {
@@ -64,7 +74,7 @@ class Toolbar extends Component {
                     key={category.id}
                     name={category.name}
                     checked={category.checked}
-                    onChange={this.toggleView}
+                    onChange={(event) => this.toggleView(event, category.id)}
                   ></input>
                   <span>{category.name}</span>
                 </label>

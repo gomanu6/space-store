@@ -79,6 +79,39 @@ class Store extends Component {
       accessories: true,
       moons: true,
     },
+
+    categories: [
+      {
+        catid: 1,
+        name: "planets",
+        show: true,
+      },
+      {
+        catid: 2,
+        name: "stars",
+        show: true,
+      },
+      {
+        catid: 3,
+        name: "asteroids",
+        show: true,
+      },
+      {
+        catid: 4,
+        name: "ships",
+        show: true,
+      },
+      {
+        catid: 5,
+        name: "accessories",
+        show: true,
+      },
+      {
+        catid: 6,
+        name: "moons",
+        show: true,
+      },
+    ],
   };
 
   render() {
