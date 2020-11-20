@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Toolbar from "./Toolbar";
-import Store from "./Store";
+import Toolbar from "../components/toolbar";
+import Store from "../components/store";
 
 class Layout extends Component {
   state = {

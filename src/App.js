@@ -1,5 +1,4 @@
 import "./App.css";
-import Product from "./components/product";
 import Layout from "./containers/Layout";
 
 function App() {

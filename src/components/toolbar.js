@@ -10,7 +10,7 @@ const toolbar = (props) => {
         {props.productCategories.map((category) => {
           return (
             <span className='category-item' key={category.id}>
-              <label for={category.name} key={category.id}>
+              <label htmlFor={category.name} key={category.id}>
                 <input
                   type='checkbox'
                   key={category.id}
