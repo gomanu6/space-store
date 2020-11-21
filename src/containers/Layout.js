@@ -1,49 +1,57 @@
 import React, { Component } from "react";
 import Toolbar from "../components/toolbar";
 import Store from "../components/store";
+import Cart from "./Cart";
+import ProductList from "../components/productlist.json";
 
 class Layout extends Component {
   state = {
     categories: [
       {
-        id: 1,
+        cid: 1,
         name: "planets",
         checked: true,
       },
       {
-        id: 2,
+        cid: 2,
         name: "stars",
         checked: true,
       },
       {
-        id: 3,
+        cid: 3,
         name: "asteroids",
         checked: true,
       },
       {
-        id: 4,
+        cid: 4,
         name: "ships",
         checked: true,
       },
       {
-        id: 5,
+        cid: 5,
         name: "accessories",
         checked: true,
       },
       {
-        id: 6,
+        cid: 6,
         name: "moons",
         checked: true,
       },
     ],
+
+    cart: {
+      cartItems: [],
+      totalPrice: 0,
+    },
   };
 
-  toggleView = (e, id) => {
+  toggleView = (e, cid) => {
     // console.log(e);
     // console.log(id);
 
+    // Find Index of the object with the product id of the category
     const catIndex = this.state.categories.findIndex((c) => {
-      return c.id === id;
+      return c.cid === cid;
     });
 
     const cat = { ...this.state.categories[catIndex] };
@@ -61,7 +69,39 @@ class Layout extends Component {
     });
   };
 
-  new = "hello";
+  addToCartHandler = (event, pid) => {
+    event.preventDefault();
+    // console.log(event);
+    // console.log(pid);
+    // alert("Bought");
+
+    // find the product id of the button clicked from the product list
+
+    const prodToCart = ProductList.filter((prod) => {
+      return prod.pid === pid;
+    });
+
+    // console.log(prodToCart[0]);
+    const cartItems = [...this.state.cart.cartItems];
+    // console.log(cartItems);
+    cartItems.push(prodToCart[0]);
+    // console.log(cartItems);
+
+    let totalPrice = this.state.cart.totalPrice;
+    // console.log(totalPrice);
+    totalPrice += prodToCart[0].price;
+    // console.log(totalPrice);
+
+    // Set the State
+
+    this.setState({
+      cart: {
+        cartItems: cartItems,
+        totalPrice: totalPrice,
+      },
+    });
+  };
+
   render() {
     return (
       <div>
@@ -69,8 +109,10 @@ class Layout extends Component {
           productCategories={this.state.categories}
           toggled={this.toggleView}
         />
-        <Store cats={this.state.categories} />
-        <div className='cart'>Cart</div>
+        <Store cats={this.state.categories} addtocart={this.addToCartHandler} />
+        <div className='cart'>
+          <Cart cart={this.state.cart} />
+        </div>
       </div>
     );
   }

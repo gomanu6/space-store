@@ -11,7 +11,14 @@ const product = (props) => {
       <div className='product-descirption'>{props.description} </div>
       <div className='product-price'>{props.price} </div>
       <div className='product-category'>Category: {props.category}</div>
-      <button>Add to Cart</button>
+      <button
+        type='button'
+        name='add-to-cart'
+        value='add-to-cart'
+        onClick={(event) => props.buy(event, props.pid)}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };

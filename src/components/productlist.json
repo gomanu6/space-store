@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 1,
+    "category": "planets"
+  },
+
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 2,
+    "category": "planets"
+  },
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 3,
+    "category": "planets"
+  },
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 4,
+    "category": "accessories"
+  },
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 5,
+    "category": "ships"
+  },
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 6,
+    "category": "asteroids"
+  },
+  {
+    "title": "Product 1",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 7,
+    "category": "stars"
+  },
+  {
+    "title": "Product 8",
+    "description": "description",
+    "price": 20,
+    "image": "",
+    "pid": 8,
+    "category": "moons"
+  }
+]

@@ -1,75 +1,10 @@
 import React from "react";
 import Product from "./product";
 import "./store.css";
+import ProductList from "./productlist.json";
 
 const store = (props) => {
-  const products = [
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 1,
-      category: "planets",
-    },
-
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 2,
-      category: "planets",
-    },
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 3,
-      category: "planets",
-    },
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 4,
-      category: "accessories",
-    },
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 5,
-      category: "ships",
-    },
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 6,
-      category: "asteroids",
-    },
-    {
-      title: "Product 1",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 7,
-      category: "stars",
-    },
-    {
-      title: "Product 8",
-      description: "description",
-      price: 20,
-      image: "",
-      id: 8,
-      category: "moons",
-    },
-  ];
+  const products = ProductList;
 
   // console.log(this.props.cats);
   let categoryList = [];
@@ -96,6 +31,11 @@ const store = (props) => {
 
   // console.log(categoryList);
 
+  // const handleClick = () => {
+  //   let prodId =
+  //   props.addtocart(prodId)
+  // }
+
   //checks the category products in the state against those in the filtered categories
   let itemsToShow = products
     .filter((item) => {
@@ -108,15 +48,19 @@ const store = (props) => {
     })
     .map((product) => {
       return (
-        <Product
-          className='product'
-          title={product.title}
-          image={product.image}
-          description={product.description}
-          price={product.price}
-          key={product.id}
-          category={product.category}
-        />
+        <div>
+          <Product
+            className='product'
+            title={product.title}
+            image={product.image}
+            description={product.description}
+            price={product.price}
+            key={product.pid}
+            category={product.category}
+            buy={props.addtocart}
+            pid={product.pid}
+          />
+        </div>
       );
     });
 

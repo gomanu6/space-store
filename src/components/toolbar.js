@@ -9,14 +9,14 @@ const toolbar = (props) => {
       <form className='category-form'>
         {props.productCategories.map((category) => {
           return (
-            <span className='category-item' key={category.id}>
-              <label htmlFor={category.name} key={category.id}>
+            <span className='category-item' key={category.cid}>
+              <label htmlFor={category.name} key={category.cid}>
                 <input
                   type='checkbox'
-                  key={category.id}
+                  key={category.cid}
                   name={category.name}
                   checked={category.checked}
-                  onChange={(event) => props.toggled(event, category.id)}
+                  onChange={(event) => props.toggled(event, category.cid)}
                 ></input>
                 <span>{category.name}</span>
               </label>
