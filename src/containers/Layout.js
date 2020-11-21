@@ -102,6 +102,15 @@ class Layout extends Component {
     });
   };
 
+  bought = () => {
+    this.setState({
+      cart: {
+        cartItems: [],
+        totalPrice: 0,
+      },
+    });
+  };
+
   render() {
     return (
       <div>
@@ -111,7 +120,7 @@ class Layout extends Component {
         />
         <Store cats={this.state.categories} addtocart={this.addToCartHandler} />
         <div className='cart'>
-          <Cart cart={this.state.cart} />
+          <Cart cart={this.state.cart} bought={this.bought} />
         </div>
       </div>
     );
