@@ -64,7 +64,12 @@ const store = (props) => {
       );
     });
 
-  return <div className='store-grid'>{itemsToShow}</div>;
+  return (
+    <div>
+      <div className='store-grid'>{itemsToShow}</div>
+      <hr />
+    </div>
+  );
 };
 
 export default store;

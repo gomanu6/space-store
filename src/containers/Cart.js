@@ -55,7 +55,9 @@ class Cart extends Component {
             <div>Items in your Cart</div>
           ) : (
             <div>
-              Your Cart is empty. Add some celestial objects to your cart.
+              Your Heavenly Cart is empty. Add some celestial objects to your
+              cart, you Earthling.
+              <hr></hr>
             </div>
           )}
         </div>

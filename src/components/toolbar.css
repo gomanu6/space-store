@@ -13,15 +13,23 @@
   height: 5vh;
 } */
 
-.category-form {
+/* .category-form {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, auto);
   width: 100%;
   display: inline-block;
-}
+} */
 
+.category-form {
+  display: flex;
+  flex-direction: row;
+  /* border-right: 2px solid red; */
+  /* height: 100%;
+  width: 12vw; */
+}
 .category-item {
-  margin: 0 20px;
+  margin: 30 20px;
+  line-height: 2rem;
   /* display: inline-block; */
 }

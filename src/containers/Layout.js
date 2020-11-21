@@ -3,6 +3,7 @@ import Toolbar from "../components/toolbar";
 import Store from "../components/store";
 import Cart from "./Cart";
 import ProductList from "../components/productlist.json";
+import "./layout.css";
 
 class Layout extends Component {
   state = {
@@ -113,7 +114,7 @@ class Layout extends Component {
 
   render() {
     return (
-      <div>
+      <div className='main-layout'>
         <Toolbar
           productCategories={this.state.categories}
           toggled={this.toggleView}

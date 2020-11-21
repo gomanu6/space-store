@@ -6,6 +6,7 @@ const toolbar = (props) => {
   return (
     <div className='toolbar'>
       <span>Choose a category:</span>
+
       <form className='category-form'>
         {props.productCategories.map((category) => {
           return (
