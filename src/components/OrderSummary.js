@@ -1,7 +1,7 @@
 import React from "react";
 import CartItem from "./CartItem";
 
-const OrderConfirmation = (props) => {
+const OrderSummary = (props) => {
   return (
     <div>
       <div>Order Summary</div>
@@ -10,4 +10,4 @@ const OrderConfirmation = (props) => {
     </div>
   );
 };
-export default OrderConfirmation;
+export default OrderSummary;

@@ -71,6 +71,13 @@ class Cart extends Component {
         >
           Checkout
         </button>
+        <button
+          type='button'
+          onClick={this.props.reset}
+          disabled={this.props.cart.cartItems.length < 1}
+        >
+          Empty Cart
+        </button>
       </div>
     );
   }
