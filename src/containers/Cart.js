@@ -46,7 +46,11 @@ class Cart extends Component {
               totalPrice={+this.props.cart.totalPrice}
             />
           )}
-          <button onClick={this.purchased} disabled={this.state.purchased}>
+          <button
+            className='buy-now'
+            onClick={this.purchased}
+            disabled={this.state.purchased}
+          >
             Buy Now
           </button>
         </Modal>
@@ -67,6 +71,7 @@ class Cart extends Component {
               </div>
               <div className='cart-buttons'>
                 <button
+                  className='checkout-button'
                   type='button'
                   onClick={this.buyNow}
                   disabled={this.props.cart.cartItems.length < 1}
@@ -74,6 +79,7 @@ class Cart extends Component {
                   Checkout
                 </button>
                 <button
+                  className='empty-cart-button'
                   type='button'
                   onClick={this.props.reset}
                   disabled={this.props.cart.cartItems.length < 1}

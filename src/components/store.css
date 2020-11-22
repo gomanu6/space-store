@@ -8,4 +8,12 @@
   border-bottom: 1px dashed gray;
   justify-content: space-evenly;
   margin-right: 0;
+
+  background: rgb(227, 191, 99);
+  background: radial-gradient(
+    circle,
+    rgba(227, 191, 99, 1) 0%,
+    rgba(52, 124, 215, 1) 45%,
+    rgba(140, 140, 137, 1) 100%
+  );
 }

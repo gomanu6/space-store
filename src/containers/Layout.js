@@ -83,6 +83,7 @@ class Layout extends Component {
     });
 
     // console.log(prodToCart[0]);
+
     const cartItems = [...this.state.cart.cartItems];
     // console.log(cartItems);
     cartItems.push(prodToCart[0]);

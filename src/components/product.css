@@ -1,7 +1,7 @@
 .product-card {
   height: 400px;
   width: 300px;
-  border: 2px solid black;
+  border: 1px dashed pink;
   /* width: 250px; */
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@ img.product-image {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  border: 1px dashed goldenrod;
 }
 
 .product-title {
@@ -46,4 +47,47 @@ img.product-image {
 
 .price:before {
   content: "$$ ";
+}
+
+.add-to-cart {
+  background: #d0501e;
+  background-image: -webkit-linear-gradient(top, #d0501e, #f6b63d);
+  background-image: -moz-linear-gradient(top, #d0501e, #f6b63d);
+  background-image: -ms-linear-gradient(top, #d0501e, #f6b63d);
+  background-image: -o-linear-gradient(top, #d0501e, #f6b63d);
+  background-image: linear-gradient(to bottom, #d0501e, #f6b63d);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #000000;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 8px;
+  /* -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000; */
+  border: solid #99c624 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-to-cart:focus {
+  outline: none;
+}
+
+.add-to-cart:hover {
+  border: solid #dd380d 1px;
+  background: #f6b63d;
+  background-image: -webkit-linear-gradient(top, #f6b63d, #d0501e);
+  background-image: -moz-linear-gradient(top, #f6b63d, #d0501e);
+  background-image: -ms-linear-gradient(top, #f6b63d, #d0501e);
+  background-image: -o-linear-gradient(top, #f6b63d, #d0501e);
+  background-image: linear-gradient(to bottom, #f6b63d, #d0501e);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
 }

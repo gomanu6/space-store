@@ -7,6 +7,7 @@ const productList = [
     image: "https://thumbs2.imgbox.com/42/f0/PxvkOJw9_t.jpg",
     pid: 1,
     category: "planets",
+    quantity: 1,
   },
 
   {
@@ -17,15 +18,17 @@ const productList = [
     image: "https://thumbs2.imgbox.com/ce/1f/LlExbV6j_t.jpg",
     pid: 2,
     category: "planets",
+    quantity: 1,
   },
   {
     title: "Pluto",
     description:
-      "The former planet has been looking for a new owner since being relegated to just another cosmic body. A perfect place for second home with cool weather all year round.",
+      "The former planet is a perfect place for second home with cool weather all year round.",
     price: 300000,
     image: "https://thumbs2.imgbox.com/93/0f/LaqCH4qS_t.jpg",
     pid: 3,
     category: "planets",
+    quantity: 1,
   },
   {
     title: "Spacesuit",
@@ -34,6 +37,7 @@ const productList = [
     image: "https://thumbs2.imgbox.com/64/5f/M6qPUDtt_t.jpg",
     pid: 4,
     category: "accessories",
+    quantity: 6,
   },
   {
     title: "Space Fleet",
@@ -43,6 +47,7 @@ const productList = [
     image: "https://thumbs2.imgbox.com/b5/08/1BDH2uR1_t.jpg",
     pid: 5,
     category: "ships",
+    quantity: 1,
   },
   {
     title: "Common Asteroid",
@@ -52,6 +57,7 @@ const productList = [
     image: "https://thumbs2.imgbox.com/e6/6b/ObxN91rr_t.jpg",
     pid: 6,
     category: "asteroids",
+    quantity: 120,
   },
   {
     title: "Star",
@@ -61,6 +67,7 @@ const productList = [
     image: "https://thumbs2.imgbox.com/b3/17/8nbqEGRf_t.jpg",
     pid: 7,
     category: "stars",
+    quantity: 900,
   },
   {
     title: "Moon",
@@ -69,6 +76,7 @@ const productList = [
     image: "https://thumbs2.imgbox.com/6e/51/HAhw2K98_t.jpg",
     pid: 8,
     category: "moons",
+    quantity: 1,
   },
 ];
 
