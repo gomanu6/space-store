@@ -1,0 +1,16 @@
+.cart-heading {
+  text-align: center;
+}
+
+.cart-container {
+  border-left: 1px dashed goldenrod;
+  margin: 0 20px 20px 0;
+
+  padding: 1rem;
+  border-top: 1px dashed gray;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}

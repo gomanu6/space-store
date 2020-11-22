@@ -1,6 +1,11 @@
 .store-grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, 200px);
-  /* width: 80vw; */
+  grid-template-columns: repeat(auto-fit, 300px);
+  width: 75vw;
+  /* border-right: 1px dashed gray; */
+  border-top: 1px dashed gray;
+  border-bottom: 1px dashed gray;
+  justify-content: space-evenly;
+  margin-right: 0;
 }

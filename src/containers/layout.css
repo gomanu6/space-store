@@ -3,3 +3,17 @@
   flex-direction: row;
   flex-shrink: 0;
 } */
+
+.store-layout {
+  display: flex;
+}
+
+.store {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.cart {
+  width: 350px;
+  line-height: 2rem;
+}

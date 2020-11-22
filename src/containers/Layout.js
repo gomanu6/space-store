@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Toolbar from "../components/toolbar";
 import Store from "../components/store";
 import Cart from "./Cart";
-import ProductList from "../components/productlist.json";
+import ProductList from "../components/productlist";
 import "./layout.css";
 
 class Layout extends Component {
@@ -119,13 +119,20 @@ class Layout extends Component {
           productCategories={this.state.categories}
           toggled={this.toggleView}
         />
-        <Store cats={this.state.categories} addtocart={this.addToCartHandler} />
-        <div className='cart'>
-          <Cart
-            cart={this.state.cart}
-            bought={this.bought}
-            reset={this.bought}
+        <div className='store-layout'>
+          <Store
+            className='store'
+            cats={this.state.categories}
+            addtocart={this.addToCartHandler}
           />
+          <div className='cart'>
+            <Cart
+              className='cart'
+              cart={this.state.cart}
+              bought={this.bought}
+              reset={this.bought}
+            />
+          </div>
         </div>
       </div>
     );

@@ -1,0 +1,11 @@
+.cart-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+hr.item-separator {
+  text-align: center;
+  /* display: inline-block; */
+  width: 30%;
+  border-top: 1px dotted gray;
+}

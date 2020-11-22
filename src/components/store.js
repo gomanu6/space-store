@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./product";
 import "./store.css";
-import ProductList from "./productlist.json";
+import ProductList from "./productlist";
 
 const store = (props) => {
   const products = ProductList;
@@ -50,7 +50,6 @@ const store = (props) => {
       return (
         <div>
           <Product
-            className='product'
             title={product.title}
             image={product.image}
             description={product.description}
@@ -59,6 +58,7 @@ const store = (props) => {
             category={product.category}
             buy={props.addtocart}
             pid={product.pid}
+            source={product.image}
           />
         </div>
       );
@@ -67,7 +67,6 @@ const store = (props) => {
   return (
     <div>
       <div className='store-grid'>{itemsToShow}</div>
-      <hr />
     </div>
   );
 };
