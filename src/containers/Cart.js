@@ -31,8 +31,8 @@ class Cart extends Component {
   };
 
   render() {
-    let items = this.props.cart.cartItems.map((item) => {
-      return <Item name={item.title} price={item.price} key={item.pid} />;
+    let items = this.props.cart.cartItems.map((item, index) => {
+      return <Item name={item.title} price={item.price} key={index} />;
     });
     return (
       <div className='cart-container'>

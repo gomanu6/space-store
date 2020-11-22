@@ -59,8 +59,6 @@ const store = (props) => {
             buy={props.addtocart}
             pid={product.pid}
             source={product.image}
-            noAddToCart={props.cantBuy}
-            qty={+product.quantity}
           />
         </div>
       );

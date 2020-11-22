@@ -122,13 +122,11 @@ class Layout extends Component {
         />
         <div className='store-layout'>
           <Store
-            className='store'
             cats={this.state.categories}
             addtocart={this.addToCartHandler}
           />
           <div className='cart'>
             <Cart
-              className='cart'
               cart={this.state.cart}
               bought={this.bought}
               reset={this.bought}

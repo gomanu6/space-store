@@ -71,8 +71,8 @@ const productList = [
   },
   {
     title: "Moon",
-    description: "description",
-    price: 20,
+    description: "Your own personal Moon.",
+    price: 599999,
     image: "https://thumbs2.imgbox.com/6e/51/HAhw2K98_t.jpg",
     pid: 8,
     category: "moons",
