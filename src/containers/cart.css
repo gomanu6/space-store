@@ -70,3 +70,24 @@
 .buy-now:disabled {
   cursor: not-allowed;
 }
+
+@media (max-width: 650px) {
+  .empty-cart-button,
+  .checkout-button {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+
+  .cart-container {
+    width: 40vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  .empty-cart-button,
+  .checkout-button {
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
+}

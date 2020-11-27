@@ -47,11 +47,12 @@
 }
 
 .toolbar {
-  background: rgb(158, 159, 156);
-  background: linear-gradient(
+  background-color: #6ea0a5;
+  /* background: rgb(158, 159, 156); */
+  /* background: linear-gradient(
     236deg,
     rgba(189, 192, 194, 1) 0%,
     rgba(125, 156, 163, 1) 43%,
     rgba(158, 159, 156, 1) 100%
-  );
+  ); */
 }

@@ -1,7 +1,7 @@
 .store-grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 250px);
   width: 75vw;
   /* border-right: 1px dashed gray; */
   border-top: 1px dashed gray;
@@ -22,7 +22,50 @@
   .store-grid {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, 250px);
+    width: 61vw;
+    /* border-right: 1px dashed gray; */
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    justify-content: space-evenly;
+    margin-right: 0;
+
+    background: rgb(227, 191, 99);
+    background: radial-gradient(
+      circle,
+      rgba(227, 191, 99, 1) 0%,
+      rgba(52, 124, 215, 1) 45%,
+      rgba(140, 140, 137, 1) 100%
+    );
+  }
+}
+
+@media (max-width: 770px) {
+  .store-grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 50vw;
+    /* border-right: 1px dashed gray; */
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    justify-content: space-evenly;
+    margin-right: 0;
+
+    background: rgb(227, 191, 99);
+    background: radial-gradient(
+      circle,
+      rgba(227, 191, 99, 1) 0%,
+      rgba(52, 124, 215, 1) 45%,
+      rgba(140, 140, 137, 1) 100%
+    );
+  }
+}
+@media (max-width: 650px) {
+  .store-grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 300px);
     width: 60vw;
     /* border-right: 1px dashed gray; */
     border-top: 1px dashed gray;
