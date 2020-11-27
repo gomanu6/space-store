@@ -24,7 +24,7 @@ const productList = [
     title: "Pluto",
     description:
       "The former planet is a perfect place for second home with cool weather all year round.",
-    price: 300000,
+    price: 299999,
     image: "https://www.flaticon.com/svg/static/icons/svg/2909/2909930.svg",
     pid: 3,
     category: "planets",
@@ -33,17 +33,17 @@ const productList = [
   {
     title: "Spacesuit",
     description: "A must for humans, if you plan to travel in space.",
-    price: 204500,
+    price: 259999,
     image: "https://www.flaticon.com/svg/static/icons/svg/2531/2531029.svg",
     pid: 4,
     category: "accessories",
     quantity: 6,
   },
   {
-    title: "Space Fleet",
+    title: "Space Craft",
     description:
-      "A fleet of ships for you and your family. A separate ship for pets and other guests.",
-    price: 500500,
+      "A Space Craft for you and your family. Capable of warp speed.",
+    price: 599999,
     image: "https://www.flaticon.com/svg/static/icons/svg/3538/3538041.svg",
     pid: 5,
     category: "ships",
